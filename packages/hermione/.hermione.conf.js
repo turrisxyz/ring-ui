@@ -4,7 +4,7 @@ const path = require('path');
 const ip = require('ip');
 require('dotenv').config();
 
-const baseUrl = `http://${ip.address()}:9999/`;
+const baseUrl = `http://${ip.address()}:10000/`;
 
 const gridUrl = process.env.SELENIUM_GRID ||
   `https://${process.env.BROWSERSTACK_NAME}:${process.env.BROWSERSTACK_KEY}@hub-cloud.browserstack.com:443/wd/hub`;
@@ -49,7 +49,7 @@ module.exports = {
       desiredCapabilities: {
         browser: 'Chrome',
         pageLoadStrategy: 'normal',
-        browser_version: '89.0',
+        browser_version: '93.0',
         chromeOptions: {
           excludeSwitches: ['enable-automation']
         },
@@ -66,7 +66,7 @@ module.exports = {
       desiredCapabilities: {
         browser: 'Firefox',
         pageLoadStrategy: 'normal',
-        browser_version: '87.0',
+        browser_version: '92.0',
         os: 'OS X',
         os_version: 'Catalina',
         maxDuration
