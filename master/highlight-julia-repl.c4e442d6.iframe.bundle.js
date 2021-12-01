@@ -1,1 +1,0 @@
-(self.webpackChunk_jetbrains_ring_ui=self.webpackChunk_jetbrains_ring_ui||[]).push([[9832],{79989:module=>{module.exports=function juliaRepl(hljs){return{name:"Julia REPL",contains:[{className:"meta",begin:/^julia>/,relevance:10,starts:{end:/^(?![ ]{6})/,subLanguage:"julia"},aliases:["jldoctest"]}]}}}}]);
